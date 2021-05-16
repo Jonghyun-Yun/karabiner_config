@@ -1,0 +1,160 @@
+{
+  "title": "DK61E",
+  "rules": [
+    {
+      "description": "DK61E: FN ALT CMD (SPC) CMD ALT FN",
+      "manipulators": [
+        {
+          "from": {
+            "key_code": "left_option",
+            "modifiers": {
+              "optional": ["any"]
+            }
+          },
+          "to": [
+            {
+              "key_code": "left_command"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "device_if",
+              "identifiers": [
+                {
+                  "vendor_id": 7847,
+                  "product_id": 119
+                }
+              ]
+            }
+          ],
+          "type": "basic"
+        },
+        {
+          "from": {
+            "key_code": "left_command",
+            "modifiers": {
+              "optional": ["any"]
+            }
+          },
+          "to": [
+            {
+              "key_code": "left_option"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "device_if",
+              "identifiers": [
+                {
+                  "vendor_id": 7847,
+                  "product_id": 119
+                }
+              ]
+            }
+          ],
+          "type": "basic"
+        },
+        {
+          "from": {
+            "key_code": "left_control",
+            "modifiers": {
+              "optional": ["any"]
+            }
+          },
+          "to": [
+            {
+              "key_code": "fn"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "device_if",
+              "identifiers": [
+                {
+                  "vendor_id": 7847,
+                  "product_id": 119
+                }
+              ]
+            }
+          ],
+          "type": "basic"
+        },
+        {
+          "from": {
+            "key_code": "right_option",
+            "modifiers": {
+              "optional": ["any"]
+            }
+          },
+          "to": [
+            {
+              "key_code": "right_command"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "device_if",
+              "identifiers": [
+                {
+                  "vendor_id": 7847,
+                  "product_id": 119
+                }
+              ]
+            }
+          ],
+          "type": "basic"
+        },
+        {
+          "from": {
+            "key_code": "application",
+            "modifiers": {
+              "optional": ["any"]
+            }
+          },
+          "to": [
+            {
+              "key_code": "right_option"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "device_if",
+              "identifiers": [
+                {
+                  "vendor_id": 7847,
+                  "product_id": 119
+                }
+              ]
+            }
+          ],
+          "type": "basic"
+        },
+        {
+          "from": {
+            "key_code": "right_control",
+            "modifiers": {
+              "optional": ["any"]
+            }
+          },
+          "to": [
+            {
+              "key_code": "fn"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "device_if",
+              "identifiers": [
+                {
+                  "vendor_id": 7847,
+                  "product_id": 119
+                }
+              ]
+            }
+          ],
+          "type": "basic"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "title": "Hyper binding",
+  "rules": [
+    {
+      "description": "C-s-a and C-s-' to right_control",
+      "manipulators": [
+        {
+          "from": {
+            "key_code": "a",
+            "modifiers": {
+              "mandatory": [
+                "left_command",
+                "left_control"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "right_control"
+            }
+          ],
+          "type": "basic"
+        },
+        {
+          "from": {
+            "key_code": "quote",
+            "modifiers": {
+              "mandatory": [
+                "right_command",
+                "left_control"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "right_control"
+            }
+          ],
+          "type": "basic"
+        }
+      ]
+    }
+  ]
+}
